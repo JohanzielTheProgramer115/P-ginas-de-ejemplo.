@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #111827;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+nav {
+    text-align: center;
+    padding-top: 31px;
+}
+
+nav a {
+    color: #374151;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.btn-header {
+    float: right;
+    margin-top: -36px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-header:hover {
+    background: #1d4ed8;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    padding: 100px 8%;
+    background: white;
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 52%;
+    float: left;
+    padding-top: 45px;
+}
+
+.mini-titulo {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.descripcion {
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.botones {
+    margin-top: 35px;
+}
+
+.btn-principal {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-secundario {
+    padding: 14px 25px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-secundario:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+
+/* HERO EQUIPO */
+
+.hero-equipo {
+    width: 42%;
+    height: 450px;
+    float: right;
+    position: relative;
+}
+
+.circulo {
+    width: 390px;
+    height: 390px;
+    background: #e8f0ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
+
+.computadora {
+    position: absolute;
+    font-size: 190px;
+    top: 100px;
+    left: 130px;
+    z-index: 2;
+}
+
+.tarjeta {
+    position: absolute;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #00000015;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.tarjeta1 {
+    top: 80px;
+    left: 20px;
+}
+
+.tarjeta2 {
+    bottom: 70px;
+    right: 20px;
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 100px 8%;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.titulo-seccion p {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.titulo-seccion h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.titulo-seccion span {
+    color: #6b7280;
+}
+
+
+/* SERVICIOS */
+
+.servicios {
+    overflow: hidden;
+}
+
+.servicio {
+    width: 23%;
+    float: left;
+    margin-right: 2.66%;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    min-height: 330px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.servicio:last-child {
+    margin-right: 0;
+}
+
+.servicio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px #00000010;
+}
+
+.icono {
+    width: 60px;
+    height: 60px;
+    background: #e8f0ff;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.servicio h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.servicio button {
+    border: none;
+    background: none;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* EQUIPOS */
+
+.equipos {
+    padding: 100px 8%;
+    background: #111827;
+    color: white;
+    overflow: hidden;
+}
+
+.equipos .titulo-seccion span {
+    color: #9ca3af;
+}
+
+.equipo {
+    width: 23%;
+    height: 300px;
+    float: left;
+    margin-right: 2.66%;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #1f2937;
+}
+
+.equipo:last-child {
+    margin-right: 0;
+}
+
+.equipo:before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #2563eb;
+    opacity: 0.15;
+    right: -50px;
+    top: -50px;
+}
+
+.equipo div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 20px;
+}
+
+.equipo h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.equipo p {
+    color: #d1d5db;
+    margin-bottom: 18px;
+}
+
+.equipo button {
+    padding: 10px 15px;
+    background: white;
+    color: #111827;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* NOSOTROS */
+
+.nosotros {
+    padding: 110px 10%;
+    background: white;
+    overflow: hidden;
+}
+
+.nosotros-texto {
+    width: 58%;
+    float: left;
+}
+
+.nosotros-texto h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.nosotros-texto > p {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 650px;
+}
+
+.nosotros-card {
+    width: 32%;
+    float: right;
+    background: #eff6ff;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.icono-grande {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.nosotros-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.nosotros-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.estadisticas {
+    margin-top: 35px;
+}
+
+.estadisticas div {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+.estadisticas strong {
+    display: block;
+    font-size: 28px;
+    color: #2563eb;
+}
+
+.estadisticas span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    padding: 100px 8%;
+    background: #f7f9fc;
+}
+
+form {
+    width: 650px;
+    max-width: 100%;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px #00000008;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 140px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1d4ed8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #0f172a;
+    color: white;
+    padding: 45px 8%;
+    overflow: hidden;
+}
+
+footer .logo {
+    line-height: normal;
+}
+
+footer p {
+    color: #9ca3af;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 30px !important;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+}
+
+.modal-contenido {
+    width: 400px;
+    max-width: 90%;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    margin: 150px auto;
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-icono {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    background: #dcfce7;
+    color: #16a34a;
+    border-radius: 50%;
+    line-height: 65px;
+    font-size: 30px;
+}
+
+.modal-contenido h2 {
+    margin: 20px 0 10px;
+}
+
+.modal-contenido p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.modal-contenido > button:last-child {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}

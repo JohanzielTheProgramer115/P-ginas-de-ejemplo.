@@ -1,0 +1,692 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #26332d;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e8eee9;
+    padding: 0 7%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span span {
+    color: #78a98a;
+}
+
+.icono {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #dcefe2;
+    color: #548365;
+    border-radius: 9px;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+nav {
+    float: left;
+    margin-left: 8%;
+    height: 80px;
+    line-height: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #52605a;
+    margin: 0 16px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #619375;
+}
+
+.btn-login {
+    float: right;
+    margin-top: 20px;
+    padding: 11px 22px;
+    border: 1px solid #c8dfcf;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #557e62;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background: #eef8f1;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-principal {
+    border: none;
+    background: #79a98a;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-principal:hover {
+    background: #638f72;
+}
+
+.btn-secundario {
+    display: inline-block;
+    text-decoration: none;
+    color: #557e62;
+    border: 1px solid #cbded0;
+    padding: 14px 25px;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.btn-secundario:hover {
+    background: #eef8f1;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    min-height: 650px;
+    padding: 100px 9%;
+    background: #f7fbf8;
+    overflow: hidden;
+}
+
+.contenido-inicio {
+    float: left;
+    width: 52%;
+    padding-top: 45px;
+}
+
+.etiqueta {
+    color: #6b9b79;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    color: #24322b;
+    margin-bottom: 25px;
+}
+
+h1 span,
+h2 span {
+    color: #76a886;
+}
+
+.descripcion {
+    color: #6c7972;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.botones {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   TARJETA RESUMEN
+========================= */
+
+.tarjeta-resumen {
+    float: right;
+    width: 390px;
+    background: white;
+    padding: 27px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(71, 105, 83, 0.12);
+}
+
+.encabezado-tarjeta {
+    overflow: hidden;
+    border-bottom: 1px solid #edf1ee;
+    padding-bottom: 20px;
+}
+
+.encabezado-tarjeta p {
+    color: #89958e;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.encabezado-tarjeta h3 {
+    font-size: 18px;
+}
+
+.estado {
+    float: right;
+    margin-top: -25px;
+    background: #e8f5eb;
+    color: #568064;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.balance {
+    padding: 20px 0;
+}
+
+.balance p {
+    color: #8a968f;
+    font-size: 13px;
+}
+
+.balance h2 {
+    margin-top: 5px;
+    font-size: 28px;
+}
+
+.servicio {
+    border-top: 1px solid #eef1ef;
+    padding: 14px 0;
+    overflow: hidden;
+}
+
+.servicio strong {
+    display: block;
+    font-size: 14px;
+}
+
+.servicio small {
+    color: #929c96;
+}
+
+.servicio b {
+    float: right;
+    margin-top: -28px;
+    font-size: 14px;
+}
+
+.btn-pagar {
+    width: 100%;
+    border: none;
+    background: #dcefe2;
+    color: #527d60;
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-pagar:hover {
+    background: #cde6d4;
+}
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicios {
+    padding: 100px 9%;
+    text-align: center;
+}
+
+.titulo-seccion {
+    max-width: 650px;
+    margin: auto;
+}
+
+.titulo-seccion h2,
+.nosotros-texto h2,
+.pagos-contenido h2,
+.contacto h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.titulo-seccion > p:last-child {
+    color: #77827c;
+    line-height: 1.7;
+}
+
+.tarjetas-servicios {
+    margin-top: 55px;
+    overflow: hidden;
+}
+
+.card {
+    float: left;
+    width: 23%;
+    margin: 1%;
+    padding: 30px 25px;
+    border: 1px solid #e5ece7;
+    border-radius: 14px;
+    text-align: left;
+    min-height: 260px;
+}
+
+.card:hover {
+    border-color: #c4ddcb;
+    box-shadow: 0 12px 30px rgba(70, 110, 83, 0.08);
+}
+
+.icono-card {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #eef8f1;
+    border-radius: 12px;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #77827c;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #609170;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PAGOS
+========================= */
+
+.pagos {
+    background: #f5faf6;
+    padding: 100px 9%;
+    overflow: hidden;
+}
+
+.pagos-contenido {
+    float: left;
+    width: 42%;
+    padding-top: 30px;
+}
+
+.pagos-contenido > p {
+    color: #77827c;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.lista-pagos {
+    float: right;
+    width: 48%;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+}
+
+.pago-item {
+    overflow: hidden;
+    padding: 18px 0;
+    border-bottom: 1px solid #edf1ee;
+}
+
+.pago-item:last-child {
+    border-bottom: none;
+}
+
+.pago-icono {
+    float: left;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background: #eef8f1;
+    border-radius: 10px;
+    margin-right: 14px;
+}
+
+.pago-item strong {
+    font-size: 14px;
+}
+
+.pago-item p {
+    color: #929c96;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.pago-item span {
+    float: right;
+    margin-top: -28px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+    padding: 110px 9%;
+    overflow: hidden;
+}
+
+.nosotros-imagen {
+    float: left;
+    width: 45%;
+    height: 360px;
+    background: #edf7f0;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.circulo {
+    width: 190px;
+    height: 190px;
+    line-height: 190px;
+    margin: auto;
+    background: #dcefe2;
+    border-radius: 50%;
+    font-size: 70px;
+}
+
+.nosotros-texto {
+    float: right;
+    width: 48%;
+    padding: 35px 0;
+}
+
+.nosotros-texto > p {
+    color: #77827c;
+    line-height: 1.7;
+}
+
+.datos {
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+.datos div {
+    float: left;
+    width: 30%;
+}
+
+.datos strong {
+    font-size: 24px;
+    color: #679576;
+}
+
+.datos p {
+    color: #89938d;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    text-align: center;
+    background: #eef8f1;
+    padding: 90px 20px;
+}
+
+.contacto > p:not(.etiqueta) {
+    color: #718078;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #26352d;
+    color: white;
+    padding: 30px 9%;
+    overflow: hidden;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 18px;
+}
+
+footer > p {
+    float: right;
+    color: #aebbb3;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   MODALES
+========================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 43, 34, 0.55);
+    z-index: 200;
+}
+
+.modal-contenido {
+    position: relative;
+    width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.cerrar {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: #89958e;
+    cursor: pointer;
+}
+
+.modal-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.modal-contenido h2 {
+    margin-bottom: 8px;
+}
+
+.modal-contenido > p {
+    color: #89958e;
+    margin-bottom: 25px;
+}
+
+.modal-contenido input[type="text"],
+.modal-contenido input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce5df;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.modal-contenido input:focus {
+    border-color: #82ad90;
+}
+
+.btn-modal {
+    width: 100%;
+    margin: 10px 0 18px;
+}
+
+.modal-contenido > a {
+    display: block;
+    text-align: center;
+    color: #669476;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.pago-modal label {
+    display: block;
+    padding: 15px;
+    background: #f5faf6;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pago-modal label:hover {
+    background: #eaf5ed;
+}
+
+.pago-modal label input {
+    margin-right: 10px;
+}
+
+.total-pago {
+    border-top: 1px solid #e5ebe7;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.total-pago strong {
+    float: right;
+    color: #5e8d6e;
+    font-size: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .contenido-inicio,
+    .tarjeta-resumen,
+    .pagos-contenido,
+    .lista-pagos,
+    .nosotros-imagen,
+    .nosotros-texto {
+        float: none;
+        width: 100%;
+    }
+
+    .tarjeta-resumen {
+        margin-top: 50px;
+    }
+
+    .inicio {
+        padding-top: 60px;
+    }
+
+    .card {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .pagos-contenido {
+        margin-bottom: 50px;
+    }
+
+    .nosotros-imagen {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .modal-contenido {
+        width: 90%;
+    }
+
+    footer > p,
+    .footer-logo {
+        float: none;
+        text-align: center;
+    }
+
+    footer > p {
+        margin-top: 15px;
+    }
+}

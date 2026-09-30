@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 80px;
+    background: white;
+    padding: 0 7%;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 80px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #555;
+}
+
+nav {
+    text-align: center;
+    padding-top: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+.carrito {
+    float: right;
+    margin-top: -38px;
+    border: none;
+    background: #111;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    background: #e5e5e5;
+}
+
+.hero {
+    min-height: 470px;
+    padding: 100px 10%;
+    text-align: center;
+    background: #dcdcdc;
+}
+
+.hero-texto {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-texto > p:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    display: block;
+    color: #222;
+}
+
+.descripcion {
+    margin-top: 25px;
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* =========================
+   MARCAS
+========================= */
+
+.marcas {
+    padding: 90px 8%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.titulo h2 {
+    font-size: 40px;
+}
+
+
+.marcas-grid {
+    overflow: hidden;
+}
+
+
+.marca {
+    width: 31%;
+    height: 350px;
+    float: left;
+    margin-right: 3.5%;
+    border-radius: 18px;
+    padding: 45px 35px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.marca:last-child {
+    margin-right: 0;
+}
+
+.marca:hover {
+    transform: translateY(-10px);
+}
+
+
+.marca-logo {
+    width: 75px;
+    height: 75px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 69px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+
+.marca h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.marca p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.marca span {
+    font-weight: bold;
+}
+
+
+/* COLORES */
+
+.playstation {
+    background: #006fcd;
+}
+
+.nintendo {
+    background: #e60012;
+}
+
+.xbox {
+    background: #107c10;
+}
+
+
+/* =========================
+   PAGINAS DE MARCA
+========================= */
+
+.pagina-playstation {
+    background: #f1f7ff;
+}
+
+.pagina-nintendo {
+    background: #fff3f3;
+}
+
+.pagina-xbox {
+    background: #f2fff2;
+}
+
+
+.pagina-playstation .marca-hero {
+    background: #006fcd;
+}
+
+.pagina-nintendo .marca-hero {
+    background: #e60012;
+}
+
+.pagina-xbox .marca-hero {
+    background: #107c10;
+}
+
+
+.marca-hero {
+    height: 380px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.marca-hero p {
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.marca-hero h1 {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.marca-hero span {
+    font-size: 19px;
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+    padding: 90px 8%;
+}
+
+.titulo-productos {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-productos p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pagina-playstation .titulo-productos p {
+    color: #006fcd;
+}
+
+.pagina-nintendo .titulo-productos p {
+    color: #e60012;
+}
+
+.pagina-xbox .titulo-productos p {
+    color: #107c10;
+}
+
+.titulo-productos h2 {
+    font-size: 40px;
+}
+
+
+.productos-grid {
+    overflow: hidden;
+}
+
+
+.producto {
+    width: 31%;
+    float: left;
+    margin-right: 3.5%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.producto:last-child {
+    margin-right: 0;
+}
+
+.producto:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px #00000015;
+}
+
+
+.producto-imagen {
+    height: 220px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 220px;
+    font-size: 100px;
+    margin-bottom: 25px;
+}
+
+
+.producto h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.producto p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.producto strong {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.producto button {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* BOTONES SEGÚN MARCA */
+
+.pagina-playstation .producto button {
+    background: #006fcd;
+}
+
+.pagina-nintendo .producto button {
+    background: #e60012;
+}
+
+.pagina-xbox .producto button {
+    background: #107c10;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 45px;
+    clear: both;
+}
+
+footer .logo {
+    float: none;
+    line-height: normal;
+}
+
+footer p {
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}

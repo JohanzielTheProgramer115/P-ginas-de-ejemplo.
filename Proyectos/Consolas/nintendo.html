@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone | Nintendo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-nintendo">
+
+
+    <header>
+
+        <div class="logo">
+            GAME<span>ZONE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="playstation.html">
+                PlayStation
+            </a>
+
+            <a href="nintendo.html">
+                Nintendo
+            </a>
+
+            <a href="xbox.html">
+                Xbox
+            </a>
+
+        </nav>
+
+        <button class="carrito" onclick="mostrarCarrito()">
+            🛒 Carrito <span id="cantidad">0</span>
+        </button>
+
+    </header>
+
+
+    <section class="marca-hero">
+
+        <p>GAMEZONE</p>
+
+        <h1>
+            NINTENDO
+        </h1>
+
+        <span>
+            Diversión para todos.
+        </span>
+
+    </section>
+
+
+    <section class="productos">
+
+        <div class="titulo-productos">
+
+            <p>NINTENDO</p>
+
+            <h2>
+                Consolas disponibles
+            </h2>
+
+        </div>
+
+
+        <div class="productos-grid">
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    Nintendo Switch
+                </h3>
+
+                <p>
+                    Consola Nintendo Switch
+                </p>
+
+                <strong>
+                    $299.99
+                </strong>
+
+                <button onclick="agregarCarrito('Nintendo Switch', 299.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    Nintendo Switch OLED
+                </h3>
+
+                <p>
+                    Nintendo Switch OLED
+                </p>
+
+                <strong>
+                    $349.99
+                </strong>
+
+                <button onclick="agregarCarrito('Nintendo Switch OLED', 349.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    Joy-Con
+                </h3>
+
+                <p>
+                    Controles Nintendo Switch
+                </p>
+
+                <strong>
+                    $79.99
+                </strong>
+
+                <button onclick="agregarCarrito('Joy-Con', 79.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            GAME<span>ZONE</span>
+        </div>
+
+        <p>
+            Tu tienda de consolas y videojuegos.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

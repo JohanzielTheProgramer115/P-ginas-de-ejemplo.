@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HoodX | Tenis</title>
+
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="img/HoodX.png" alt="HoodX">
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="tenis.html" class="activo">Tenis</a>
+            <a href="nosotros.html">Nosotros</a>
+        </nav>
+
+        <div class="acciones">
+
+            <button id="buscarBtn" class="icono">
+                ⌕
+            </button>
+
+            <button id="carritoBtn" class="icono carrito-icono">
+                🛒
+                <span id="contador">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- TITULO -->
+
+    <section class="titulo-tienda">
+
+        <p>HOODX / COLLECTION</p>
+
+        <h1>
+            TODOS LOS
+            <span>TENIS.</span>
+        </h1>
+
+        <p class="subtitulo">
+            Encuentra tu próximo par.
+        </p>
+
+    </section>
+
+
+    <!-- FILTROS -->
+
+    <section class="filtros">
+
+        <button class="filtro activo-filtro" data-categoria="todos">
+            Todos
+        </button>
+
+        <button class="filtro" data-categoria="hombre">
+            Hombres
+        </button>
+
+        <button class="filtro" data-categoria="mujer">
+            Mujeres
+        </button>
+
+        <button class="filtro" data-categoria="nuevo">
+            Nuevos
+        </button>
+
+    </section>
+
+
+    <!-- PRODUCTOS -->
+
+    <main class="productos" id="productos">
+
+
+        <!-- PRODUCTO 1 -->
+
+        <article
+            class="producto"
+            data-categoria="hombre nuevo"
+            data-nombre="HoodX Shadow"
+            data-precio="120"
+            data-imagen="img/tenis1.png"
+        >
+
+            <div class="producto-imagen">
+
+                <span class="numero">01</span>
+                <span class="nuevo">NUEVO</span>
+
+                <img src="img/Tatum.png" alt="HoodX Shadow">
+
+                <button class="agregar-rapido">
+                    +
+                </button>
+
+            </div>
+
+            <div class="producto-info">
+
+                <div>
+                    <h2>HoodX Shadow</h2>
+                    <p>Hombre / Sneakers</p>
+                </div>
+
+                <strong>$120</strong>
+
+            </div>
+
+            <button class="agregar">
+                AGREGAR AL CARRITO
+            </button>
+
+        </article>
+
+
+        <!-- PRODUCTO 2 -->
+
+        <article
+            class="producto"
+            data-categoria="hombre"
+            data-nombre="HoodX Purple"
+            data-precio="135"
+            data-imagen="img/tenis2.png"
+        >
+
+            <div class="producto-imagen">
+
+                <span class="numero">02</span>
+
+                <img src="img/SG.png" alt="HoodX Purple">
+
+                <button class="agregar-rapido">
+                    +
+                </button>
+
+            </div>
+
+            <div class="producto-info">
+
+                <div>
+                    <h2>HoodX Purple</h2>
+                    <p>Hombre / Sneakers</p>
+                </div>
+
+                <strong>$135</strong>
+
+            </div>
+
+            <button class="agregar">
+                AGREGAR AL CARRITO
+            </button>
+
+        </article>
+
+
+        <!-- PRODUCTO 3 -->
+
+        <article
+            class="producto"
+            data-categoria="mujer nuevo"
+            data-nombre="HoodX Nova"
+            data-precio="110"
+            data-imagen="img/tenis3.png"
+        >
+
+            <div class="producto-imagen">
+
+                <span class="numero">03</span>
+                <span class="nuevo">NUEVO</span>
+
+                <img src="img/Jordan4.png" alt="HoodX Nova">
+
+                <button class="agregar-rapido">
+                    +
+                </button>
+
+            </div>
+
+            <div class="producto-info">
+
+                <div>
+                    <h2>HoodX Nova</h2>
+                    <p>Mujer / Sneakers</p>
+                </div>
+
+                <strong>$110</strong>
+
+            </div>
+
+            <button class="agregar">
+                AGREGAR AL CARRITO
+            </button>
+
+        </article>
+
+
+        <!-- PRODUCTO 4 -->
+
+        <article
+            class="producto"
+            data-categoria="hombre"
+            data-nombre="HoodX Street"
+            data-precio="145"
+            data-imagen="img/tenis4.png"
+        >
+
+            <div class="producto-imagen">
+
+                <span class="numero">04</span>
+
+                <img src="img/AntoniE.png" alt="HoodX Street">
+
+                <button class="agregar-rapido">
+                    +
+                </button>
+
+            </div>
+
+            <div class="producto-info">
+
+                <div>
+                    <h2>HoodX Street</h2>
+                    <p>Hombre / Sneakers</p>
+                </div>
+
+                <strong>$145</strong>
+
+            </div>
+
+            <button class="agregar">
+                AGREGAR AL CARRITO
+            </button>
+
+        </article>
+
+
+        <!-- PRODUCTO 5 -->
+
+        <article
+            class="producto"
+            data-categoria="mujer"
+            data-nombre="HoodX Glow"
+            data-precio="125"
+            data-imagen="img/tenis5.png"
+        >
+
+            <div class="producto-imagen">
+
+                <span class="numero">05</span>
+
+                <img src="img/kobe.png" alt="HoodX Glow">
+
+                <button class="agregar-rapido">
+                    +
+                </button>
+
+            </div>
+
+            <div class="producto-info">
+
+                <div>
+                    <h2>HoodX Glow</h2>
+                    <p>Mujer / Sneakers</p>
+                </div>
+
+                <strong>$125</strong>
+
+            </div>
+
+            <button class="agregar">
+                AGREGAR AL CARRITO
+            </button>
+
+        </article>
+
+
+        <!-- PRODUCTO 6 -->
+
+        <article
+            class="producto"
+            data-categoria="hombre nuevo"
+            data-nombre="HoodX Future"
+            data-precio="160"
+            data-imagen="img/tenis6.png"
+        >
+
+            <div class="producto-imagen">
+
+                <span class="numero">06</span>
+                <span class="nuevo">NUEVO</span>
+
+                <img src="img/gold.png" alt="HoodX Future">
+
+                <button class="agregar-rapido">
+                    +
+                </button>
+
+            </div>
+
+            <div class="producto-info">
+
+                <div>
+                    <h2>HoodX Future</h2>
+                    <p>Hombre / Sneakers</p>
+                </div>
+
+                <strong>$160</strong>
+
+            </div>
+
+            <button class="agregar">
+                AGREGAR AL CARRITO
+            </button>
+
+        </article>
+
+    </main>
+
+
+    <!-- MENSAJE -->
+
+    <div id="mensaje" class="mensaje">
+        <span>✓</span>
+        <p>Producto agregado al carrito</p>
+    </div>
+
+
+    <!-- CARRITO -->
+
+    <div id="fondoCarrito" class="fondo-carrito"></div>
+
+    <aside id="carrito" class="carrito">
+
+        <div class="carrito-header">
+
+            <div>
+                <p>HOODX</p>
+                <h2>Tu carrito</h2>
+            </div>
+
+            <button id="cerrarCarrito">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="carritoProductos" class="carrito-productos">
+
+            <div class="carrito-vacio">
+
+                <div>🛒</div>
+
+                <h3>Tu carrito está vacío</h3>
+
+                <p>
+                    Agrega unos tenis y aparecerán aquí.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="carrito-footer">
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <strong id="total">
+                    $0
+                </strong>
+
+            </div>
+
+            <button id="comprarBtn" class="comprar">
+                FINALIZAR COMPRA
+                →
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="tienda.js"></script>
+
+</body>
+</html>

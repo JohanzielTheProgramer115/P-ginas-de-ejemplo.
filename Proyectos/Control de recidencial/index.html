@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MiResidencial | Administración Residencial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="logo">
+            <span class="icono">M</span>
+            <span>Mi<span>Residencial</span></span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#pagos">Pagos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="btn-login" onclick="abrirLogin()">
+            Iniciar sesión
+        </button>
+
+    </header>
+
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+
+        <div class="contenido-inicio">
+
+            <p class="etiqueta">ADMINISTRACIÓN RESIDENCIAL</p>
+
+            <h1>
+                Todo tu residencial,
+                <span>en un solo lugar.</span>
+            </h1>
+
+            <p class="descripcion">
+                Administra tus pagos, servicios, mantenimientos
+                y avisos de manera sencilla, segura y organizada.
+            </p>
+
+            <div class="botones">
+
+                <button class="btn-principal" onclick="abrirLogin()">
+                    Acceder a mi cuenta
+                </button>
+
+                <a href="#servicios" class="btn-secundario">
+                    Conocer más
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TARJETA DE RESUMEN -->
+        <div class="tarjeta-resumen">
+
+            <div class="encabezado-tarjeta">
+                <div>
+                    <p>Mi apartamento</p>
+                    <h3>Edificio B · 3-A</h3>
+                </div>
+
+                <div class="estado">
+                    Al día
+                </div>
+            </div>
+
+            <div class="balance">
+                <p>Balance pendiente</p>
+                <h2>RD$ 4,450.00</h2>
+            </div>
+
+            <div class="servicio">
+                <div>
+                    <strong>Mantenimiento</strong>
+                    <small>Septiembre 2026</small>
+                </div>
+                <b>RD$ 2,500</b>
+            </div>
+
+            <div class="servicio">
+                <div>
+                    <strong>Agua</strong>
+                    <small>Septiembre 2026</small>
+                </div>
+                <b>RD$ 450</b>
+            </div>
+
+            <div class="servicio">
+                <div>
+                    <strong>Luz</strong>
+                    <small>Septiembre 2026</small>
+                </div>
+                <b>RD$ 1,200</b>
+            </div>
+
+            <div class="servicio">
+                <div>
+                    <strong>Basura</strong>
+                    <small>Septiembre 2026</small>
+                </div>
+                <b>RD$ 300</b>
+            </div>
+
+            <button class="btn-pagar" onclick="abrirPago()">
+                Pagar servicios
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+
+        <div class="titulo-seccion">
+            <p>TODO EN UN SOLO LUGAR</p>
+
+            <h2>
+                Una administración
+                <span>más sencilla</span>
+            </h2>
+
+            <p>
+                MiResidencial reúne las herramientas necesarias
+                para mantener organizada la vida de tu residencial.
+            </p>
+        </div>
+
+
+        <div class="tarjetas-servicios">
+
+            <div class="card">
+
+                <div class="icono-card">💳</div>
+
+                <h3>Pagos</h3>
+
+                <p>
+                    Consulta y paga el mantenimiento,
+                    agua, luz y basura desde un mismo lugar.
+                </p>
+
+                <a href="#pagos">Ver pagos →</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono-card">🔧</div>
+
+                <h3>Mantenimiento</h3>
+
+                <p>
+                    Reporta problemas y consulta el estado
+                    de las reparaciones de tu edificio.
+                </p>
+
+                <a href="#">Reportar problema →</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono-card">📢</div>
+
+                <h3>Avisos</h3>
+
+                <p>
+                    Recibe información importante sobre
+                    trabajos, reuniones y actividades.
+                </p>
+
+                <a href="#">Ver avisos →</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono-card">🏢</div>
+
+                <h3>Mi edificio</h3>
+
+                <p>
+                    Consulta información sobre las áreas
+                    comunes y servicios de tu edificio.
+                </p>
+
+                <a href="#">Ver edificio →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGOS -->
+    <section class="pagos" id="pagos">
+
+        <div class="pagos-contenido">
+
+            <p class="etiqueta">PAGOS EN LÍNEA</p>
+
+            <h2>
+                Tus servicios,
+                <span>más fáciles de pagar.</span>
+            </h2>
+
+            <p>
+                Selecciona los servicios que deseas pagar,
+                revisa el total y realiza tu pago desde tu cuenta.
+            </p>
+
+            <button class="btn-principal" onclick="abrirPago()">
+                Ir a pagos
+            </button>
+
+        </div>
+
+
+        <div class="lista-pagos">
+
+            <div class="pago-item">
+                <div class="pago-icono">🏢</div>
+
+                <div>
+                    <strong>Mantenimiento</strong>
+                    <p>Administración del residencial</p>
+                </div>
+
+                <span>RD$ 2,500</span>
+            </div>
+
+
+            <div class="pago-item">
+                <div class="pago-icono">💧</div>
+
+                <div>
+                    <strong>Agua</strong>
+                    <p>Consumo mensual</p>
+                </div>
+
+                <span>RD$ 450</span>
+            </div>
+
+
+            <div class="pago-item">
+                <div class="pago-icono">⚡</div>
+
+                <div>
+                    <strong>Luz</strong>
+                    <p>Consumo mensual</p>
+                </div>
+
+                <span>RD$ 1,200</span>
+            </div>
+
+
+            <div class="pago-item">
+                <div class="pago-icono">🗑️</div>
+
+                <div>
+                    <strong>Basura</strong>
+                    <p>Servicio de recolección</p>
+                </div>
+
+                <span>RD$ 300</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+    <section class="nosotros" id="nosotros">
+
+        <div class="nosotros-imagen">
+            <div class="circulo">
+                🏢
+            </div>
+        </div>
+
+        <div class="nosotros-texto">
+
+            <p class="etiqueta">SOBRE MIRESIDENCIAL</p>
+
+            <h2>
+                Una comunidad
+                <span>mejor organizada.</span>
+            </h2>
+
+            <p>
+                MiResidencial es una plataforma diseñada para
+                facilitar la administración de residenciales y
+                mantener conectados a residentes y administradores.
+            </p>
+
+            <div class="datos">
+
+                <div>
+                    <strong>24/7</strong>
+                    <p>Acceso</p>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <p>Organizado</p>
+                </div>
+
+                <div>
+                    <strong>1</strong>
+                    <p>Plataforma</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+
+        <p class="etiqueta">¿NECESITAS AYUDA?</p>
+
+        <h2>
+            Estamos aquí para
+            <span>ayudarte.</span>
+        </h2>
+
+        <p>
+            Ponte en contacto con la administración
+            de tu residencial.
+        </p>
+
+        <button class="btn-principal" onclick="mostrarContacto()">
+            Contactar administración
+        </button>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <div class="footer-logo">
+            <span class="icono">M</span>
+            <strong>MiResidencial</strong>
+        </div>
+
+        <p>
+            © 2026 MiResidencial. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- VENTANA DE LOGIN -->
+    <div class="modal" id="modalLogin">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar" onclick="cerrarLogin()">×</button>
+
+            <div class="modal-logo">
+                <span class="icono">M</span>
+                MiResidencial
+            </div>
+
+            <h2>Bienvenido</h2>
+
+            <p>Accede a tu cuenta residencial.</p>
+
+            <input type="text" id="usuario" placeholder="Usuario o correo">
+
+            <input type="password" id="password" placeholder="Contraseña">
+
+            <button class="btn-principal btn-modal" onclick="iniciarSesion()">
+                Iniciar sesión
+            </button>
+
+            <a href="#">¿Olvidaste tu contraseña?</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- VENTANA DE PAGO -->
+    <div class="modal" id="modalPago">
+
+        <div class="modal-contenido pago-modal">
+
+            <button class="cerrar" onclick="cerrarPago()">×</button>
+
+            <p class="etiqueta">PAGO DE SERVICIOS</p>
+
+            <h2>Selecciona qué deseas pagar</h2>
+
+            <label>
+                <input type="checkbox" value="2500" class="servicio-check">
+                Mantenimiento — RD$ 2,500
+            </label>
+
+            <label>
+                <input type="checkbox" value="450" class="servicio-check">
+                Agua — RD$ 450
+            </label>
+
+            <label>
+                <input type="checkbox" value="1200" class="servicio-check">
+                Luz — RD$ 1,200
+            </label>
+
+            <label>
+                <input type="checkbox" value="300" class="servicio-check">
+                Basura — RD$ 300
+            </label>
+
+            <div class="total-pago">
+                Total:
+                <strong id="totalPago">RD$ 0</strong>
+            </div>
+
+            <button class="btn-principal btn-modal" onclick="procesarPago()">
+                Continuar al pago
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

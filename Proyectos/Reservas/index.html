@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CasaStay | Reserva tu próximo destino</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Casa<span>Stay</span>
+    </a>
+
+    <nav>
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="casa.html">Casas</a>
+        <a href="villa.html">Villas</a>
+        <a href="resort.html">Resorts</a>
+    </nav>
+
+    <div class="acciones">
+
+        <a href="reservas.html" class="reservas-link">
+            🔖
+            <span id="contadorReservas">0</span>
+        </a>
+
+        <button class="login-btn">
+            Iniciar sesión
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-contenido">
+
+        <p class="etiqueta">BIENVENIDO A CASASTAY</p>
+
+        <h1>
+            Encuentra el lugar
+            <br>
+            perfecto para <span>quedarte.</span>
+        </h1>
+
+        <p>
+            Descubre casas, villas y resorts increíbles
+            para tus próximas vacaciones.
+        </p>
+
+        <div class="buscador">
+
+            <div class="campo">
+                <span>📍</span>
+
+                <div>
+                    <label>Destino</label>
+                    <input
+                        type="text"
+                        id="buscarDestino"
+                        placeholder="¿A dónde quieres ir?"
+                    >
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="campo">
+                <span>📅</span>
+
+                <div>
+                    <label>Entrada</label>
+                    <input type="date" id="buscarEntrada">
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="campo">
+                <span>📅</span>
+
+                <div>
+                    <label>Salida</label>
+                    <input type="date" id="buscarSalida">
+                </div>
+            </div>
+
+            <button onclick="buscarInicio()" class="buscar-btn">
+                Buscar
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="seccion">
+
+    <div class="titulo">
+
+        <div>
+            <p>DESCUBRE</p>
+            <h2>Explora por categoría</h2>
+        </div>
+
+    </div>
+
+
+    <div class="categorias">
+
+        <a href="casas.html" class="categoria">
+            <div class="categoria-icono">🏡</div>
+            <h3>Casas</h3>
+            <p>Casas cómodas para disfrutar en familia.</p>
+        </a>
+
+        <a href="villas.html" class="categoria">
+            <div class="categoria-icono">🌴</div>
+            <h3>Villas</h3>
+            <p>Villas privadas para una experiencia especial.</p>
+        </a>
+
+        <a href="resorts.html" class="categoria">
+            <div class="categoria-icono">🏨</div>
+            <h3>Resorts</h3>
+            <p>Resorts increíbles para relajarte.</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="seccion alojamientos">
+
+    <div class="titulo titulo-flex">
+
+        <div>
+            <p>CASASTAY</p>
+            <h2>Alojamientos destacados</h2>
+        </div>
+
+        <a href="casas.html" class="ver-todos">
+            Ver alojamientos →
+        </a>
+
+    </div>
+
+
+    <div class="propiedades-grid">
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Villa</span>
+
+                <button
+                    class="favorito"
+                    onclick="favorito(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Villa Blue Ocean</h3>
+
+                <p>📍 Punta Cana, República Dominicana</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.9</span>
+                    <strong>US$220 / noche</strong>
+                </div>
+
+                <a
+                    href="alojamiento.html?id=1"
+                    class="btn-propiedad"
+                >
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Casa</span>
+
+                <button
+                    class="favorito"
+                    onclick="favorito(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Casa Serenity</h3>
+
+                <p>📍 Las Terrenas, Samaná</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.8</span>
+                    <strong>US$145 / noche</strong>
+                </div>
+
+                <a
+                    href="alojamiento.html?id=2"
+                    class="btn-propiedad"
+                >
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Resort</span>
+
+                <button
+                    class="favorito"
+                    onclick="favorito(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Ocean Paradise</h3>
+
+                <p>📍 Bávaro, República Dominicana</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.9</span>
+                    <strong>US$280 / noche</strong>
+                </div>
+
+                <a
+                    href="alojamiento.html?id=3"
+                    class="btn-propiedad"
+                >
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="banner">
+
+    <div>
+        <p>VIAJA CON CASASTAY</p>
+
+        <h2>
+            Tu próximo destino
+            <br>
+            comienza aquí.
+        </h2>
+
+        <p class="banner-texto">
+            Encuentra lugares únicos y reserva
+            tu próxima experiencia.
+        </p>
+
+        <a href="casas.html" class="banner-btn">
+            Explorar alojamientos
+        </a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1000&q=80">
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Casa<span>Stay</span>
+    </div>
+
+    <p>Encuentra tu próximo lugar favorito.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="casa.html">Casas</a>
+        <a href="villa.html">Villas</a>
+        <a href="resort.html">Resorts</a>
+        <a href="reservas.html">Mis reservas</a>
+    </div>
+
+    <small>
+        © 2026 CasaStay. Todos los derechos reservados.
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

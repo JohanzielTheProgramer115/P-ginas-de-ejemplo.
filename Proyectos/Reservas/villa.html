@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CasaStay | Villas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Casa<span>Stay</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="casa.html">Casas</a>
+        <a href="villa.html" class="activo">Villas</a>
+        <a href="resort.html">Resorts</a>
+    </nav>
+
+    <div class="acciones">
+
+        <a href="reservas.html" class="reservas-link">
+            🔖
+            <span id="contadorReservas">0</span>
+        </a>
+
+        <button class="login-btn">
+            Iniciar sesión
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="pagina-titulo">
+
+    <p>CASASTAY</p>
+
+    <h1>Villas para vivir una experiencia única</h1>
+
+    <span>
+        Privacidad, comodidad y lugares increíbles.
+    </span>
+
+</section>
+
+
+<section class="seccion">
+
+    <div class="propiedades-grid">
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Villa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Villa Blue Ocean</h3>
+
+                <p>📍 Punta Cana</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.9</span>
+                    <strong>US$220 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=1" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Villa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Villa Palm Paradise</h3>
+
+                <p>📍 La Romana</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.7</span>
+                    <strong>US$195 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=7" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Villa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Villa Tropical</h3>
+
+                <p>📍 Samaná</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.9</span>
+                    <strong>US$250 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=8" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Villa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Villa Sunset</h3>
+
+                <p>📍 Punta Cana</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.8</span>
+                    <strong>US$230 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=9" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Casa<span>Stay</span>
+    </div>
+
+    <p>Encuentra tu próximo lugar favorito.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="casas.html">Casas</a>
+        <a href="villas.html">Villas</a>
+        <a href="resorts.html">Resorts</a>
+        <a href="reservas.html">Mis reservas</a>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

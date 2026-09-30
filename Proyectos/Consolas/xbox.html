@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone | Xbox</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-xbox">
+
+
+    <header>
+
+        <div class="logo">
+            GAME<span>ZONE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="playstation.html">
+                PlayStation
+            </a>
+
+            <a href="nintendo.html">
+                Nintendo
+            </a>
+
+            <a href="xbox.html">
+                Xbox
+            </a>
+
+        </nav>
+
+        <button class="carrito" onclick="mostrarCarrito()">
+            🛒 Carrito <span id="cantidad">0</span>
+        </button>
+
+    </header>
+
+
+    <section class="marca-hero">
+
+        <p>GAMEZONE</p>
+
+        <h1>
+            XBOX
+        </h1>
+
+        <span>
+            Power your dreams.
+        </span>
+
+    </section>
+
+
+    <section class="productos">
+
+        <div class="titulo-productos">
+
+            <p>XBOX</p>
+
+            <h2>
+                Consolas disponibles
+            </h2>
+
+        </div>
+
+
+        <div class="productos-grid">
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    Xbox Series X
+                </h3>
+
+                <p>
+                    Consola Xbox Series X
+                </p>
+
+                <strong>
+                    $499.99
+                </strong>
+
+                <button onclick="agregarCarrito('Xbox Series X', 499.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    Xbox Series S
+                </h3>
+
+                <p>
+                    Consola Xbox Series S
+                </p>
+
+                <strong>
+                    $299.99
+                </strong>
+
+                <button onclick="agregarCarrito('Xbox Series S', 299.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    Xbox Controller
+                </h3>
+
+                <p>
+                    Control inalámbrico Xbox
+                </p>
+
+                <strong>
+                    $59.99
+                </strong>
+
+                <button onclick="agregarCarrito('Xbox Controller', 59.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            GAME<span>ZONE</span>
+        </div>
+
+        <p>
+            Tu tienda de consolas y videojuegos.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CasaStay | Alojamiento</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Casa<span>Stay</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="casa.html">Casas</a>
+        <a href="villa.html">Villas</a>
+        <a href="resort.html">Resorts</a>
+    </nav>
+
+    <div class="acciones">
+
+        <a href="reservas.html" class="reservas-link">
+            🔖
+            <span id="contadorReservas">0</span>
+        </a>
+
+        <button class="login-btn">
+            Iniciar sesión
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="detalle">
+
+    <a href="javascript:history.back()" class="volver">
+        ← Volver
+    </a>
+
+
+    <div class="detalle-header">
+
+        <div>
+
+            <p id="detalleTipo" class="detalle-tipo">
+                ALOJAMIENTO
+            </p>
+
+            <h1 id="detalleNombre">
+                Cargando...
+            </h1>
+
+            <p id="detalleUbicacion">
+                📍 Cargando...
+            </p>
+
+        </div>
+
+        <div class="detalle-rating">
+            ⭐ <span id="detalleRating">4.9</span>
+        </div>
+
+    </div>
+
+
+    <div class="galeria">
+
+        <img
+            id="detalleImagen"
+            src=""
+            alt="Alojamiento"
+        >
+
+        <div class="galeria-secundaria">
+
+            <img
+                id="detalleImagen2"
+                src=""
+                alt=""
+            >
+
+            <img
+                id="detalleImagen3"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="detalle-contenido">
+
+        <div class="descripcion">
+
+            <h2 id="detalleTitulo">
+                Alojamiento
+            </h2>
+
+            <p id="detalleDescripcion">
+                Disfruta de una experiencia increíble
+                en este alojamiento.
+            </p>
+
+
+            <div class="servicios">
+
+                <div>
+                    🛏️
+                    <strong>Habitaciones</strong>
+                    <span>3 habitaciones</span>
+                </div>
+
+                <div>
+                    🚿
+                    <strong>Baños</strong>
+                    <span>2 baños</span>
+                </div>
+
+                <div>
+                    👥
+                    <strong>Huéspedes</strong>
+                    <span>Hasta 8</span>
+                </div>
+
+                <div>
+                    📶
+                    <strong>Internet</strong>
+                    <span>WiFi incluido</span>
+                </div>
+
+                <div>
+                    🏊
+                    <strong>Piscina</strong>
+                    <span>Disponible</span>
+                </div>
+
+                <div>
+                    🚗
+                    <strong>Estacionamiento</strong>
+                    <span>Incluido</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <aside class="panel-reserva">
+
+            <h2>
+                US$<span id="detallePrecio">0</span>
+                <small>/ noche</small>
+            </h2>
+
+            <label>Entrada</label>
+
+            <input
+                type="date"
+                id="fechaEntrada"
+            >
+
+
+            <label>Salida</label>
+
+            <input
+                type="date"
+                id="fechaSalida"
+            >
+
+
+            <label>Huéspedes</label>
+
+            <input
+                type="number"
+                id="detalleHuespedes"
+                value="2"
+                min="1"
+                max="20"
+            >
+
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <strong id="detalleTotal">
+                    US$0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="reservar-grande"
+                onclick="crearReserva()"
+            >
+                Reservar
+            </button>
+
+
+            <p class="nota">
+                No se realizará ningún pago real.
+            </p>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Casa<span>Stay</span>
+    </div>
+
+    <p>Encuentra tu próximo lugar favorito.</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

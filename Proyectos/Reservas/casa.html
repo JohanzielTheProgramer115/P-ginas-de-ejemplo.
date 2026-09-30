@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CasaStay | Casas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Casa<span>Stay</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="casas.html" class="activo">Casas</a>
+        <a href="villa.html">Villas</a>
+        <a href="resort.html">Resorts</a>
+    </nav>
+
+    <div class="acciones">
+
+        <a href="reservas.html" class="reservas-link">
+            🔖
+            <span id="contadorReservas">0</span>
+        </a>
+
+        <button class="login-btn">
+            Iniciar sesión
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="pagina-titulo">
+
+    <p>CASASTAY</p>
+
+    <h1>Casas para tu próxima aventura</h1>
+
+    <span>
+        Encuentra casas cómodas en destinos increíbles.
+    </span>
+
+</section>
+
+
+<section class="seccion">
+
+    <div class="propiedades-grid">
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Casa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Casa Serenity</h3>
+
+                <p>📍 Las Terrenas, Samaná</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.8</span>
+                    <strong>US$145 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=2" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Casa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Casa Paradise</h3>
+
+                <p>📍 Puerto Plata</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.7</span>
+                    <strong>US$130 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=4" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Casa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Casa del Sol</h3>
+
+                <p>📍 Juan Dolio</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.9</span>
+                    <strong>US$160 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=5" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="propiedad">
+
+            <div class="propiedad-imagen">
+
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80">
+
+                <span class="tipo">Casa</span>
+
+                <button class="favorito" onclick="favorito(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="propiedad-info">
+
+                <h3>Casa Azul</h3>
+
+                <p>📍 Cabarete</p>
+
+                <div class="propiedad-datos">
+                    <span>⭐ 4.8</span>
+                    <strong>US$175 / noche</strong>
+                </div>
+
+                <a href="alojamiento.html?id=6" class="btn-propiedad">
+                    Ver alojamiento
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Casa<span>Stay</span>
+    </div>
+
+    <p>Encuentra tu próximo lugar favorito.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="casas.html">Casas</a>
+        <a href="villas.html">Villas</a>
+        <a href="resorts.html">Resorts</a>
+        <a href="reservas.html">Mis reservas</a>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

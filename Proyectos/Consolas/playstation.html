@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone | PlayStation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-playstation">
+
+
+    <header>
+
+        <div class="logo">
+            GAME<span>ZONE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="playstation.html">
+                PlayStation
+            </a>
+
+            <a href="nintendo.html">
+                Nintendo
+            </a>
+
+            <a href="xbox.html">
+                Xbox
+            </a>
+
+        </nav>
+
+        <button class="carrito" onclick="mostrarCarrito()">
+            🛒 Carrito <span id="cantidad">0</span>
+        </button>
+
+    </header>
+
+
+    <section class="marca-hero">
+
+        <p>GAMEZONE</p>
+
+        <h1>
+            PLAYSTATION
+        </h1>
+
+        <span>
+            Vive nuevas experiencias.
+        </span>
+
+    </section>
+
+
+    <section class="productos">
+
+        <div class="titulo-productos">
+
+            <p>PLAYSTATION</p>
+
+            <h2>
+                Consolas disponibles
+            </h2>
+
+        </div>
+
+
+        <div class="productos-grid">
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    PlayStation 5
+                </h3>
+
+                <p>
+                    Consola PlayStation 5
+                </p>
+
+                <strong>
+                    $499.99
+                </strong>
+
+                <button onclick="agregarCarrito('PlayStation 5', 499.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    PlayStation 5 Slim
+                </h3>
+
+                <p>
+                    Consola PlayStation 5 Slim
+                </p>
+
+                <strong>
+                    $449.99
+                </strong>
+
+                <button onclick="agregarCarrito('PlayStation 5 Slim', 449.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🎮
+                </div>
+
+                <h3>
+                    DualSense
+                </h3>
+
+                <p>
+                    Control inalámbrico
+                </p>
+
+                <strong>
+                    $69.99
+                </strong>
+
+                <button onclick="agregarCarrito('DualSense', 69.99)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            GAME<span>ZONE</span>
+        </div>
+
+        <p>
+            Tu tienda de consolas y videojuegos.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
